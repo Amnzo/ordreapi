@@ -3,12 +3,11 @@ $servername = "remotemysql.com";
 $username = "UEjWDl7iVS";
 $password = "fjSyF6sJM3";
 $dbname = "UEjWDl7iVS";
-
-if(isset($_POST['executeNoneQuery']) && !empty($_POST['executeNoneQuery']))
-    executeNoneQuery($_POST['executeNoneQuery']);
+if(isset($_REQUEST['executeNoneQuery']) && !empty($_REQUEST['executeNoneQuery']))
+    executeNoneQuery($_REQUEST['executeNoneQuery']);
 else
-    if(isset($_POST['executeQuery']) && !empty($_POST['executeQuery']))
-        executeQuery($_POST['executeQuery']);
+    if(isset($_REQUEST['executeQuery']) && !empty($_REQUEST['executeQuery']))
+        executeQuery($_REQUEST['executeQuery']);
 else echo 0;
 
 function executeNoneQuery($query) {
@@ -46,3 +45,6 @@ function executeQuery($qeury) { // null is false
     echo  json_encode($rows);
 }
 ?>
+Fin de la discussion
+Écrivez un message...
+
