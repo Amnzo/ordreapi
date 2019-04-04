@@ -45,6 +45,5 @@ function executeQuery($qeury) { // null is false
     echo  json_encode($rows);
 }
 ?>
-Fin de la discussion
-Écrivez un message...
+
 
