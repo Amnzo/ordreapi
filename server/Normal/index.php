@@ -1,8 +1,8 @@
 <?php
-$servername = "remotemysql.com";
-$username = "UEjWDl7iVS";
-$password = "fjSyF6sJM3";
-$dbname = "UEjWDl7iVS";
+$servername = "kashar.pro";
+$username = "salmitest";
+$password = "salmi2019";
+$dbname = "mohimane";
 if(isset($_REQUEST['executeNoneQuery']) && !empty($_REQUEST['executeNoneQuery']))
     executeNoneQuery($_REQUEST['executeNoneQuery']);
 else
